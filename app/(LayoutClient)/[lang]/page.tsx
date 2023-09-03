@@ -9,6 +9,7 @@ export async function generateStaticParams() {
 
 const ClientPage = async ({ params: { lang } }: { params: { lang: LangType } }) => {
   const dict = await getDictionary(lang)
+
   return (
     <main className="flex flex-col">
       <Title>{dict.title.login}</Title>
