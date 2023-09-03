@@ -1,7 +1,7 @@
+import Header from '@/components/share/header.component'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Header } from '../_components/shares'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export default function RootLayout({ children, params }: { children: React.ReactNode; params: any }) {
   return (
     <html lang={params.lang}>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
         {children}
       </body>

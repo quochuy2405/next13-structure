@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const ProfileAvatar = () => {
+export const Avatar = () => {
   // img 4K
   return (
     <Image
@@ -21,4 +21,4 @@ const ProfileAvatar = () => {
   )
 }
 
-export default ProfileAvatar
+export default Avatar
