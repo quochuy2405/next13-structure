@@ -1,7 +1,6 @@
 import type { LangType } from '@/app/[lang]/locales'
 import { getDictionary } from '@/app/[lang]/locales'
-import Avatar from '@/components/share/avatar.component'
-import { Title } from '@/components/share/title.component'
+import { Avatar, Title } from '@/components/shared/common'
 
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'vi' }]

@@ -1,7 +1,7 @@
 import { getDictionary } from '@/app/[lang]/locales'
 import type { LangType } from '@/app/[lang]/locales'
-import { LoginButton, LogoutButton, ProfileButton, RegisterButton } from '@/components/client/button.component'
-import { Title } from '@/components/share/title.component'
+import { LoginButton, LogoutButton, ProfileButton, RegisterButton } from '@/components/client/common/atoms'
+import { Title } from '@/components/shared/common'
 
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'vi' }]
